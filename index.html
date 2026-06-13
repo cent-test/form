@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>skillLink</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="container">
+    <div class="logo">
+        <img src="images/skillLink.svg" alt="logo">
+    </div>
+    <div class="registration">
+        <div class="registration-container">
+            <h2 id="title">
+                Зарегистрируйте аккаунт
+            </h2>
+            <div class="description">
+                Попробуйте возможности платформы skillLink: платформа, которая соединяет фрилансеров и проекты мечты!
+            </div>
+            <form id="form-registration">
+                <label class="input-all input-label remove">
+                    Полное имя (ФИО)
+                    <input type="text" name="fullName" id="fullName">
+                </label>
+                <label class="input-all input-label">
+                    Ваше имя пользователя (логин)
+                    <input type="text" name="userName" id="userName">
+                </label>
+                <label class="input-all input-label remove">
+                    Дата рождения
+                    <input type="text" name="dateBirth" id="dateBirth" placeholder="xx.xx.xxxx">
+                </label>
+                <label class="input-all input-label remove">
+                    Номер телефона
+                    <input type="text" name="userPhone" id="userPhone" placeholder="+7(xxx)xxx-xx-xx">
+                </label>
+                <label class="input-all input-label remove">
+                    E-mail
+                    <input type="text" name="eMail" id="eMail" placeholder="name@email.com">
+                </label>
+                <label class="input-all input-label">
+                    Пароль
+                    <input type="password" name="password" id="password">
+                </label>
+                <label class="input-all input-label remove">
+                    Повторите пароль
+                    <input type="password" name="repeatPassword" id="repeatPassword">
+                </label>
+                <label class="input-all checkbox-label remove">
+                    <input type="checkbox" id="myCheckbox" name="option1" checked>
+                    Подтвердите согласие с Условиями предоставления услуг и Политикой конфиденциальности
+                </label>
+                <button class="btn" id="btn-signUpIn" type="button">Зарегистрироваться</button>
+            </form>
+            <a href="#" class="link-user remove" id="link-user">У вас уже есть аккаунт?</a>
+        </div>
+    </div>
+    <div class="image" id="image">
+        <img src="images/image.svg" alt="Image">
+    </div>
+</section>
+
+<div class="popup-background" id="popup-background-input">
+    <div class="popup">
+        <div class="text" id="popup-text-input"></div>
+        <button class="btn btn-popup" id="btn-popup-input">ОК</button>
+    </div>
+</div>
+
+<div class="popup-background" id="popup-background">
+    <div class="popup">
+        <div class="text" id="popup-text"></div>
+        <button class="btn btn-popup" id="btn-popup">ОК</button>
+    </div>
+</div>
+
+
+<script src="scripts/script.js"></script>
+<script src="scripts/imask.js"></script>
+
+</body>
+</html>
